@@ -1,0 +1,203 @@
+{% extends "based_template.html" %}
+{% block content %}
+
+{% load i18n %}
+
+<!-- Параграфы и картинки -->
+
+{% if LANGUAGE_CODE == "en" and page.voice_en %}
+    <audio controls><source src="{{ page.voice_en.url }}" type="audio/wav"></audio>
+{% elif page.voice_ru %}
+    <audio controls><source src="{{ page.voice_ru.url }}" type="audio/wav"></audio>
+{% endif %}
+
+<br>
+<b>
+    {% trans 'YouAreOn' %}
+    {{ page_num }}
+    {% trans 'PageOut' %}
+    {{ quest_length }}
+</b>
+<br>
+
+{% for p in paragraphs %}
+
+    <p>
+        {% autoescape off %}
+        {% if LANGUAGE_CODE == "en" %} {{ p.paragraph_en | safe }} {% else %} {{ p.paragraph_ru | safe }} {% endif %}
+        {% endautoescape %}
+    </p>
+    
+    {% if p.image %}
+        {% if LANGUAGE_CODE == "en" %}
+            <img class="quest_pics" src="{{ p.image.url }}" alt="{{ p.image_description_en }}"  style="height:100px; max-width:300px">
+        {% else %}
+            <img class="quest_pics" src="{{ p.image.url }}" alt="{{ p.image_description_ru }}"  style="height:100px; max-width:300px">
+        {% endif %}
+    {% endif %}
+        
+{% endfor %}
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+
+
+
+<!-- Форма для ответа -->
+<form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="q_id" value="{{ q_id }}">
+    <input type="hidden" name="move" value="1">
+    {% if answer_ex %}
+        <br><br>
+        <input id="ans" , type="text" , name="ans" , value="" placeholder="{% trans 'TypeAnswer' %}">
+
+        <input type="submit" value="OK">
+    {% else %}
+        {% if end_of_the_quest %}
+            {% trans 'QuestEndText' %} 
+            <br><br>
+            <div class = "last_butons">
+            <a class="start_quest_button" id="complete_survey" href="/quest/feedback?q_id={{ q_id }}">{% trans 'CompleteSurvey' %}</a>
+            <br><br>
+            <a class="start_quest_button" id="skip_survey">{% trans 'SkipSurvey' %}</a>
+            <br><br>
+            <a class="start_quest_button1" href="/quest/catalog">{% trans 'QuestCatalog' %}</a>
+            <br><br>
+            <!-- <a class="start_quest_button3" href="/user">{% trans 'Profile' %}</a>
+            <br><br> -->
+            <a class="start_quest_button1" href="/user/presents">{% trans 'PrizeCatalog' %}</a>
+            </div>
+        {% else %}
+            {% if preend_of_quest %}
+                <input type="submit" value="{% trans 'EndQuest' %}">
+            {% else %}
+                <input type="submit" value="{% trans 'Next' %}">
+            {% endif %}
+        {% endif %}
+    {% endif %}
+</form>
+<br>
+
+<!-- Форма для пропуска страницы -->
+{% if end_of_the_quest or not answer_ex %}
+{% else %}
+<form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="q_id" value="{{ q_id }}">
+    <input type="hidden" name="forced_move" value="1">
+    <input type="submit" id="skip_button" value="{% trans 'SkipQuestion' %}">
+</form>
+<br>
+{% endif %}
+
+<!-- Если ответ неправильный -->
+{% if wrong %}
+    <p class="wrong">
+        {% trans 'Wrong'%}
+    </p>
+{% endif %}
+<br>
+
+<!-- Уже выданные подсказки -->
+{% for hint in hints %}
+    <b>
+        {% trans 'Hint' %}
+    </b>
+    <p class="hints">
+        {% if LANGUAGE_CODE == "en" %} {{ hint.hint_text_en }} {% else %} {{ hint.hint_text_ru }} {% endif %}
+    </p>
+{% endfor %}
+
+<!-- Формы для запроса подсказок -->
+{% for num in rem_hints %}
+    <div class="hint_request">
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="q_id" value="{{ q_id }}">
+            <input type="hidden" name="hint" value="{{ num }}">
+            <input type="submit" value="{% trans 'GetHint' %}">
+        </form>
+    </div>
+{% endfor %}
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var imgs = document.getElementsByClassName('quest_pics');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    for (let i = 0; i < imgs.length; i++) {
+        imgs[i].onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        };
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    var hint_requests = document.getElementsByClassName('hint_request');
+    if (hint_requests.length > 0) {
+        hint_requests[0].style.display = "inherit";
+    }
+
+    // Add alert to skip button
+    var skip_button = document.getElementById('skip_button');
+    if (skip_button) {
+        skip_button.onclick = function() {
+            alert("{{ correct_answer }}")
+        }
+    }
+
+    // Feddback's buttons mechanic
+
+    var _3_buttons = document.getElementsByClassName("start_quest_button1");
+    for (let i = 0; i < _3_buttons.length; i++) {
+        _3_buttons[i].style.visibility = "hidden";
+    }
+
+    var skip_survey_button = document.getElementById("skip_survey");
+    if (skip_survey_button) {
+        skip_survey_button.onclick = function() {
+            for (let i = 0; i < _3_buttons.length; i++) {
+                _3_buttons[i].style.visibility = "visible";
+                var complete_survey_button = document.getElementById("complete_survey");
+                complete_survey_button.style.visibility = "hidden";
+            }
+            skip_survey_button.style.visibility = "hidden";
+        }
+    }
+
+</script>
+
+{% endblock %}

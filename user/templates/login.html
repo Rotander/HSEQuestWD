@@ -1,0 +1,27 @@
+{% extends "based_template.html" %}
+
+{% load i18n %}
+
+{% block content %}      
+
+<div  class="forms_user">
+
+	{% if failed %}
+	<h1>{% trans 'AuthErr' %}</h1>
+	{% endif %}
+	<h1>{% trans 'Enter' %}</h1>
+	<form method="POST">
+		{% csrf_token %}
+		<div>
+			<input class="registration" type="text" id="username" name="username" placeholder="{% trans 'Login' %}">
+		</div>
+		<div>
+			<input class="registration" type="password" id="psw1" name="password" placeholder="{% trans 'Password' %}"><br><br>
+		</div>
+		<div>
+			<input type="submit" value="{% trans 'Enter' %}" ><br><br>
+		</div>
+	</form>
+	<a href="/user/register">{% trans 'Registration' %}</a>
+</div>
+{% endblock %}

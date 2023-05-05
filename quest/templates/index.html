@@ -1,0 +1,23 @@
+{% extends "based_template.html" %}
+
+{% block content %}
+
+{% load static %}
+{% load i18n %}
+
+
+<br>
+{% trans 'IndexText1' %}
+<br><br>
+{% trans 'IndexText2' %}
+<br><br>
+{% trans 'IndexText3' %}
+<br><br>
+{% trans 'IndexText4' %}
+<br><br>
+{% trans 'IndexText5' %}
+<br><br>
+<a class="start_quest_button" href="/quest/catalog">{% trans '2TheQuestCatalog' %}</a>
+
+
+{% endblock %}

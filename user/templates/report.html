@@ -1,0 +1,29 @@
+{% extends "based_template.html" %}
+{% block content %}
+{% load static %}
+
+<div class="forms_user">
+    {% if sent %}
+        <b>
+            {% trans 'MessageSent' %}
+        </b>
+    {% else %}
+        <h1>
+            {% trans 'SendErrorReport' %}
+        </h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div>
+                <input class="reportt" name="report" type="text" placeholder="{% trans 'Message' %}">
+            </div>
+            <br>
+            <input type="file" >
+            <br><br>
+            <div>
+                <input type="submit" value="{% trans 'Send' %}">
+            </div>
+        </form>
+    {% endif %}
+</div>
+
+{% endblock %}

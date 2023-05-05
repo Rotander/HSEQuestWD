@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load i18n %}
+    {% load static %}
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'img/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#2e3236">
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+
+<body>
+
+    <div class="header">
+        <!-----Меню кнопка--->
+        <div class="menu">
+            <div class="lang">
+                <form action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                    {% for lang in LANGUAGES %}
+                        {% if lang.0 != LANGUAGE_CODE %}
+                            <input type="hidden" name="language" value="{{ lang.0 }}">
+                            <input type="submit" value="{{ lang.1 }}">
+                        {% endif %}
+                    {% endfor %}
+                </form>
+            </div>
+            <nav class="three" style="background-image: url('{% static 'img/menu.png' %}');background-size: 100%;">
+                <ul class="topmenu">
+                    <li><a class="a_menu" href="#"> <i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li><a class="a_menu" href="/user">{% trans 'Profile' %}</a></li>
+                        <li><a class="a_menu" href="/quest/catalog">{% trans 'QuestCatalog' %}</a></li>
+                        <li><a class="a_menu" href="/quest/aboutus">{% trans 'AboutUs' %}</a></li>
+                        <li><a class="a_menu" href="/user/presents">{% trans 'PrizeCatalog' %}</a></li>
+                        <li><a class="a_menu" href="">{% trans 'Comments' %}</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+      <!--  <div class="menu_text">{% trans 'Menu' %}</div> -->
+    </div>
+        <!-- {% if request.session.lang %}
+        <form method="get">
+            {% if q_id %}
+            <input type="hidden" name="q_id" value="{{ q_id }}">
+            {% endif %}
+            <input type="hidden" name="lang" value="0">
+            <input type="submit" value="Рус">
+        </form><br><br>
+        {% else %}
+        <form method="get">
+            {% if q_id %}
+            <input type="hidden" name="q_id" value="{{ q_id }}">
+            {% endif %}
+            <input type="hidden" name="lang" value="1">
+            <input type="submit" value="Eng">
+        </form>
+        {% endif %} -->
+        <div class="logo">
+            <a href="/quest/"><img src="{% static "img/logo_durasov.svg" %}" alt="{% trans DurasovHouseLogo %}"></a>
+        </div>
+    </div>
+
+    <div class="wrap">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <div class="footer">
+        <p class="footer_text" >
+            {% trans 'Rights' %} <a href="/user/report" class="ramka">{% trans 'ReportAnError' %}</a><br>
+            {% trans 'Contacts' %} <a class="artem_alex" href="https://t.me/whosmakarrow">@whosmakarrow</a> , <a class="artem_alex" href="https://t.me/qlambda">@qlambda</a>
+        </p>
+    </div>
+</body>
+
+</html>
+

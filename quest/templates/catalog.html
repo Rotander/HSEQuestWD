@@ -1,0 +1,42 @@
+{% extends "based_template.html" %}
+{% block content %}
+
+{% load static %}
+{% load i18n %}
+
+{% if quest_list %}
+{% for quest in quest_list %}
+<div class="bblock">
+    <div class="quest_name">
+        <a href="/quest/play?q_id={{quest.id}}">
+            {% if LANGUAGE_CODE == "en" %} {{ quest.quest_name_en }} {% else %} {{ quest.quest_name_ru }} {% endif %}
+        </a>
+    </div>
+    <br>
+    <div class="quest_description">
+        {% if LANGUAGE_CODE == "en" %} {{ quest.quest_description_en }} {% else %} {{ quest.quest_description_ru }} {% endif %}
+    </div>
+    <br>
+    <img class="quest_image" src="{{ quest.quest_image.url }}">
+    <br>
+    <img class="clocks" src="{% static 'img/clocks.png' %}">
+    {% trans 'DurationTime' %}
+    {{quest.quest_time}}
+    <!-- {% if LANGUAGE_CODE == "en" %} {{ quest.quest_time_en }} {% else %} {{ quest.quest_time_ru }} {% endif %} -->
+    <br>
+    <br>
+    {% if LANGUAGE_CODE == "en" %} {{ quest.quest_start_en }} {% else %} {{ quest.quest_start_ru }} {% endif %}
+    <br>
+    <br>
+    <a class="start_quest_button" href="/quest/play?q_id={{quest.id}}">
+        {% trans 'QuestStart' %}
+    </a>
+</div>
+{% endfor %}
+{% else %}
+<p>
+    {% trans 'NoQuests' %}
+</p>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "based_template.html" %}
+{% block content %}
+
+{% load static %}
+{% load i18n %}
+
+{% if req_sent %}
+
+    {% trans 'GetPrizeText' %}
+
+{% else %}
+
+{% if presents_list %}
+{% for present in presents_list %}
+<div class="bblock1">
+        <div class="present_name">
+            <h1>
+                {% if LANGUAGE_CODE == "en" %} {{ present.present_name_en }} {% else %} {{ present.present_name_ru }} {% endif %}
+            </h1>
+        </div>
+        <br>
+        <div class="present_description">
+                {% if LANGUAGE_CODE == "en" %} {{ present.present_description_en }} {% else %} {{ present.present_description_ru }} {% endif %}
+        </div>
+        <br>
+        <img class="present_image" src="{{ present.present_image.url }}">
+        <br>
+        {% trans 'PresentCost' %} {{ present.present_cost }} {% trans 'Pts' %}
+        <br><br>
+        <form method="post">
+    		{% csrf_token %}
+            <input type="hidden" name="present_name" value="{{ present.present_name_en }}">
+            <input type="submit" value="{% trans 'GetPresent' %}">
+        </form>
+</div>
+{% endfor %}
+{% else %}
+<p>
+    {% trans 'NoPresents' %}
+</p>
+{% endif %}
+
+{% endif %}
+
+{% endblock %}

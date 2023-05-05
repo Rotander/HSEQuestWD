@@ -1,0 +1,103 @@
+{% extends "based_template.html" %}
+
+{% block content %}
+
+{% load static %}
+{% load i18n %}
+
+
+<!-- check if the set lang is english -->
+
+<h1 class="name_about_us">{% trans 'AboutUs' %}</h1>
+
+<br>
+
+<b>{% trans 'TechnicalDevelopment' %}</b>
+<hr>
+
+<div class="bblock2">
+    <h1 class="name_about_us"> {% trans 'ArtMak' %} </h1>
+    <img class="portrait" src="/static/img/artem.png">
+    <br>
+    <b>{% trans 'ArtMakAffilation' %}</b>
+    <br><br>
+    {% trans 'ArtMakText' %}
+    <br><b>frontend</b>
+</div>
+<div class="bblock2">
+    <h1 class="name_about_us"> {% trans 'AleIva'%} </h1>
+    <img class="portrait" src="/static/img/alex.png">
+    <b>{% trans 'AleIvaAffilation' %}</b>
+    <br><br>
+    {% trans 'AleIvaText' %}
+    <br><b>backend</b>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- сверху теперь мой любимый костыль -->
+
+
+<b>{% trans 'ContentDevelopment' %}</b>
+<hr>
+
+<div class="bblock2">
+    <h1 class="name_about_us"> {% trans 'VasUkr' %} </h1>
+    <img class="portrait" src="/static/img/vasya%20.png">
+    <br>
+    <b>{% trans 'VasUkrAffilation' %}
+    </b>
+    <br><br>
+    {% trans 'VasUkrText' %}
+    <br><b>{% trans 'VasUkrImpact' %}</b>
+</div>
+
+<div class="bblock2">
+    <h1 class="name_about_us"> {% trans 'KatBab' %}</h1>
+    <img class="portrait" src="/static/img/kate.png">
+    <b> {% trans 'KatBabAffilation' %}</b>
+    <br><br>
+    {% trans 'KatBabText' %}
+    
+    <br><b>{% trans 'KatBabImpact' %}</b>
+</div>
+
+<div class="bblock2">
+    <h1 class="name_about_us">{% trans 'IvaMit' %} </h1>
+    <img class="portrait" src="/static/img/ivan.png">
+    <b>{% trans 'IvaMitAffilation' %}</b>
+    <br><br>
+    {% trans 'IvaMitText' %}
+
+    <br><b>{% trans 'IvaMitImpact' %}</b>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- сверху теперь мой любимый костыль -->
+
+<br>
+
+<b>{% trans 'ProjectSupervisors' %}</b>
+<hr>
+
+<div class="bblock2">
+    <h1 class="name_about_us"> {% trans 'NatTit' %} </h1>
+    <img class="portrait" src="/static/img/natalia.png">
+    <br>
+    <b>{% trans 'NatTitAffilation' %}</b>
+    <br><br>
+    {% trans 'NatTitText' %}
+    <br><b></b>
+</div>
+<div class="bblock2">
+    <h1 class="name_about_us"> {% trans 'TatLob' %}</h1>
+    <img class="portrait" src="/static/img/tatiana.png">
+    <b>{% trans 'TatLobAffilation' %}</b>
+     <br><br>
+     {% trans 'TatLobText' %}
+    <br><b></b>
+</div>
+
+
+{% endblock %}

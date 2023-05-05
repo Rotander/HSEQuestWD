@@ -1,0 +1,304 @@
+{% extends "based_template.html" %}
+
+{% block content %}
+
+{% load i18n %}
+
+
+<b class="text2">
+
+    {% if feedback_send %}
+
+    <h3>{% trans 'Thank4Feedback' %}</h3>
+
+    {% else %}
+
+    <form action="/quest/feedback?q_id={{ q_id }}" method="POST">
+        {% csrf_token %}
+        <!--1-->
+        <p>
+            <div class="question_name">
+                {% trans 'ConvenienceQuestion' %}
+                <br><br>
+            </div>
+
+            
+            {% trans 'PointScale' %}
+            <br><br>
+            <label>1</label>
+            <label>
+                <input type="radio" name="convenience" value="1">
+            </label>
+            <label>
+                <input type="radio" name="convenience" value="2">
+            </label>
+            <label>
+                <input type="radio" name="convenience" value="3">
+            </label>
+            <label>
+                <input type="radio" name="convenience" value="4">
+            </label>
+            <label>
+                <input type="radio" name="convenience" value="5">
+            </label>
+            <label>
+                <input type="radio" name="convenience" value="6">
+            </label>
+            <label>
+                <input type="radio" name="convenience" value="7">
+            </label>
+            <label>
+                <input type="radio" name="convenience" value="8">
+            </label>
+            <label>
+                <input type="radio" name="convenience" value="9">
+            </label>
+            <label>
+                <input type="radio" name="convenience" value="10">
+                10
+            </label>
+        </p><br>
+
+        <!--2-->
+        <p>
+            <div class="question_name">
+                {% trans 'ComplexityQuestion' %}
+                <br><br>
+            </div>
+
+            {% trans 'PointScale' %}
+            <br><br>
+            <label>1</label>
+            <label>
+                <input type="radio" name="complexity" value="1">
+            </label>
+            <label>
+                <input type="radio" name="complexity" value="2">
+            </label>
+            <label>
+                <input type="radio" name="complexity" value="3">
+            </label>
+            <label>
+                <input type="radio" name="complexity" value="4">
+            </label>
+            <label>
+                <input type="radio" name="complexity" value="5">
+            </label>
+            <label>
+                <input type="radio" name="complexity" value="6">
+            </label>
+            <label>
+                <input type="radio" name="complexity" value="7">
+            </label>
+            <label>
+                <input type="radio" name="complexity" value="8">
+            </label>
+            <label>
+                <input type="radio" name="complexity" value="9">
+            </label>
+            <label>
+                <input type="radio" name="complexity" value="10">
+                10
+            </label>
+        </p><br>
+
+        <!--3-->
+        <p>
+            <div class="question_name">
+                {% trans 'QualityQuestion' %}
+                <br><br>
+            </div>
+
+            {% trans 'PointScale' %}
+            <br><br>
+            <label>1</label>
+            <label>
+                <input type="radio" name="text_quality" value="1">
+            </label>
+            <label>
+                <input type="radio" name="text_quality" value="2">
+            </label>
+            <label>
+                <input type="radio" name="text_quality" value="3">
+            </label>
+            <label>
+                <input type="radio" name="text_quality" value="4">
+            </label>
+            <label>
+                <input type="radio" name="text_quality" value="5">
+            </label>
+            <label>
+                <input type="radio" name="text_quality" value="6">
+            </label>
+            <label>
+                <input type="radio" name="text_quality" value="7">
+            </label>
+            <label>
+                <input type="radio" name="text_quality" value="8">
+            </label>
+            <label>
+                <input type="radio" name="text_quality" value="9">
+            </label>
+            <label>
+                <input type="radio" name="text_quality" value="10">
+                10
+            </label>
+        </p><br>
+
+        <!--4-->
+        <p>
+            <div class="question_name">
+                {% trans 'WhatToDeleteQuestion' %}
+                <br><br>
+            </div>
+            {% trans 'ShareComments' %}
+            <br><br>
+            <textarea name="what_to_delete"></textarea>
+        </p><br>
+
+        <!--5-->
+        <p>
+            <div class="question_name">
+                {% trans 'WhatToAddQuestion' %}
+                <br><br>
+            </div>
+            {% trans 'ShareComments' %}
+            <br><br>
+            <textarea name="what_to_add"></textarea>
+        </p><br>
+
+        <!--6-->
+        <p>
+            <div class="question_name">
+                {% trans 'HelpQuestion' %}
+                <br><br>
+            </div>
+
+            {% trans 'PointScale' %}
+            <br><br>
+            <label>1</label>
+            <label>
+                <input type="radio" name="did_quest_help" value="1">
+            </label>
+            <label>
+                <input type="radio" name="did_quest_help" value="2">
+            </label>
+            <label>
+                <input type="radio" name="did_quest_help" value="3">
+            </label>
+            <label>
+                <input type="radio" name="did_quest_help" value="4">
+            </label>
+            <label>
+                <input type="radio" name="did_quest_help" value="5">
+            </label>
+            <label>
+                <input type="radio" name="did_quest_help" value="6">
+            </label>
+            <label>
+                <input type="radio" name="did_quest_help" value="7">
+            </label>
+            <label>
+                <input type="radio" name="did_quest_help" value="8">
+            </label>
+            <label>
+                <input type="radio" name="did_quest_help" value="9">
+            </label>
+            <label>
+                <input type="radio" name="did_quest_help" value="10">
+                10
+            </label>
+        </p><br>
+
+        <!--7-->
+        <p>
+            <div class="question_name">
+                {% trans 'RecommendationQuestion' %}
+                <br><br>
+            </div>
+
+            {% trans 'PointScale' %}
+            <br><br>
+            <label>1</label>
+            <label>
+                <input type="radio" name="recommendation" value="1">
+            </label>
+            <label>
+                <input type="radio" name="recommendation" value="2">
+            </label>
+            <label>
+                <input type="radio" name="recommendation" value="3">
+            </label>
+            <label>
+                <input type="radio" name="recommendation" value="4">
+            </label>
+            <label>
+                <input type="radio" name="recommendation" value="5">
+            </label>
+            <label>
+                <input type="radio" name="recommendation" value="6">
+            </label>
+            <label>
+                <input type="radio" name="recommendation" value="7">
+            </label>
+            <label>
+                <input type="radio" name="recommendation" value="8">
+            </label>
+            <label>
+                <input type="radio" name="recommendation" value="9">
+            </label>
+            <label>
+                <input type="radio" name="recommendation" value="10">
+                10
+            </label>
+        </p><br>
+
+        <!--8-->
+        <p>
+            <div class="question_name">
+                {% trans 'WhySuchAnsQuestion' %}
+                <br><br>
+            </div>
+            {% trans 'ExplainAnswer' %}
+            <br><br>
+            <textarea name="why_such_ans"></textarea>
+        </p><br>
+
+        <!--9-->
+        <p>
+            <div class="question_name">
+                {% trans 'RateQuestion' %}
+                <br><br>
+            </div>
+            <div class="bad_perfect">
+
+                <label>
+                    <input type="radio" name="rate" value="5"> 5 - Превосходно<br><br>
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="4"> 4 - Хорошо<br><br>
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="3"> 3 - Нейтрально<br><br>
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="2"> 2 - Удовлетворительно<br><br>
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="1"> 1 - Всё плохо<br><br>
+                </label>
+            </div>
+        </p><br>
+
+        <p>
+            <button>
+                {% trans 'Send' %}
+            </button>
+        </p>
+    </form>
+
+    {% endif %}
+
+</b>
+
+{% endblock %}

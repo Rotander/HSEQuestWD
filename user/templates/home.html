@@ -1,0 +1,22 @@
+{% extends "based_template.html" %}
+
+{% load i18n %}
+
+{% block content %}
+<div  class="forms_user">
+    <h1>{% trans 'Profile' %}</h1>
+
+    {% if user %}
+        <p>{% trans 'YouLoggedIn' %} {{user.username}}.
+        <p>{% trans 'Welcome' %}</p>
+        <p>{% trans 'YouHave' %} {{ user.pts }} {% trans 'Pts' %}</p>
+        <p>{{user.full_name}}</p>
+        <p>{{user.university}}, {{user.faculty}}, {{user.ed_year}}</p>
+        <a class="start_quest_button" href="/user/logout">{% trans 'LogOut' %}</a>
+    {% else %}
+        <p>{% trans 'NotLoggedIn' %}</p>
+        <a class="start_quest_button1" href="/user/login">{% trans 'Login' %}</a><br><br>
+        <a class="start_quest_button" href="/user/register">{% trans 'Registration' %}</a>
+    {% endif %}
+</div>
+{% endblock %}

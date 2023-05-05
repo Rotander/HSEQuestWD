@@ -1,0 +1,20 @@
+{% extends "based_template.html" %}
+
+{% block content %}      
+
+{% load i18n %}
+
+{% load crispy_forms_tags %}
+<div  class="forms_user">
+    <h1>
+        {% trans 'YouLoggedOut' %}
+    </h1>
+    <a class="start_quest_button2" href="/user/login">
+        {% trans 'Login' %}
+    </a>
+    <br><br>
+    <a class="start_quest_button" href="/user/register">
+        {% trans 'Registration' %}
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,583 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-23 20:02+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\HSEQuest\settings.py:87
+msgid "English"
+msgstr "English"
+
+#: .\HSEQuest\settings.py:88
+msgid "Russian"
+msgstr "RU"
+
+#: .\quest\templates\aboutus.html:11 .\templates\based_template.html:57
+msgid "AboutUs"
+msgstr "About us"
+
+#: .\quest\templates\aboutus.html:15
+msgid "TechnicalDevelopment"
+msgstr "Technical development"
+
+#: .\quest\templates\aboutus.html:19
+msgid "ArtMak"
+msgstr "Artem Makarov"
+
+#: .\quest\templates\aboutus.html:22
+msgid "ArtMakAffilation"
+msgstr ""
+"Department of Computer Science, \"Data Science and Business Analytics\" "
+"Bachelor's Degree Program, 2nd year"
+
+#: .\quest\templates\aboutus.html:24
+msgid "ArtMakText"
+msgstr ""
+"In November 2021, I needed to choose a topic for a project term paper, and "
+"when I saw the proposal to create a platform for a quest related to our "
+"campus, I thought it was a great opportunity not just to get a grade, but "
+"also to do something useful for my university, to make a contribution. "
+"Working on our creation was quite enjoyable, as both my academic advisors "
+"and my partner were extremely professional, which allowed us to get "
+"everything done in a quality and timely manner."
+
+#: .\quest\templates\aboutus.html:28
+msgid "AleIva"
+msgstr "Alex Ivanov"
+
+#: .\quest\templates\aboutus.html:30
+msgid "AleIvaAffilation"
+msgstr ""
+"Faculty of Computer Science, Bachelor's Degree Program \"Applied Mathematics "
+"and Computer Science\", 2nd year"
+
+#: .\quest\templates\aboutus.html:32
+msgid "AleIvaText"
+msgstr ""
+"I joined the project because I was interested in doing something practical "
+"and useful. I also wanted to get experience in backend writing and site "
+"administration."
+
+#: .\quest\templates\aboutus.html:40
+msgid "ContentDevelopment"
+msgstr "Content Development"
+
+#: .\quest\templates\aboutus.html:44
+msgid "VasUkr"
+msgstr "Vasily Ukrainsky"
+
+#: .\quest\templates\aboutus.html:47
+msgid "VasUkrAffilation"
+msgstr ""
+"A third-year Urban Planning student, an urbanist with an interest in local "
+"history, and a fourth-generation Muscovite."
+
+#: .\quest\templates\aboutus.html:50
+msgid "VasUkrText"
+msgstr ""
+"It didn't take me long to decide on the project - I have quite a lot of "
+"experience participating in city quests, including as an organizer and "
+"compiler; the idea of doing for the university what I know and love seemed "
+"to me extremely valuable. The opportunity to tell other students about the "
+"Durasov House also appealed to me, solving the problem of the lack of "
+"interesting and structured materials about its history. It was the ability "
+"to construct a narrative out of disparate facts discovered while analyzing "
+"the most unexpected sources that was the main thing I learned while working "
+"on the quest"
+
+#: .\quest\templates\aboutus.html:51
+msgid "VasUkrImpact"
+msgstr ""
+"developed routes and content, prepared materials for the first and second "
+"quests"
+
+#: .\quest\templates\aboutus.html:55
+msgid "KatBab"
+msgstr "Kate Baburina"
+
+#: .\quest\templates\aboutus.html:57
+msgid "KatBabAffilation"
+msgstr ""
+"Member of the Project Group \"Cultural and Humanitarian Geography of the "
+"City,\" student of the Department of Urban and Regional Development of the "
+"National Research University Higher School of Economics"
+
+#: .\quest\templates\aboutus.html:59
+msgid "KatBabText"
+msgstr ""
+"The urban quest project interested me in an atypical form of \"reincarnation"
+"\" of historical facts. By choosing the quest as a way of telling and "
+"showing, our project team hopes to draw more attention to the topics we "
+"raise. As Albert Einstein said, \"Play is the highest form of research,\" so "
+"we invite you to play :)"
+
+#: .\quest\templates\aboutus.html:61
+msgid "KatBabImpact"
+msgstr "participated in the development of the route of the first quest"
+
+#: .\quest\templates\aboutus.html:65
+msgid "IvaMit"
+msgstr "Ivan Igorevich Mitin"
+
+#: .\quest\templates\aboutus.html:67
+msgid "IvaMitAffilation"
+msgstr ""
+"D. in Geography, Associate Professor at the A. A. Vysokov Higher School of "
+"Urban Studies, Faculty of Urban and Regional Development. D. in Geography, "
+"Associate Professor at the A.A. Vysokovsky Graduate School of Urban and "
+"Regional Development, head of the Cultural and Humanitarian Geography of the "
+"City Project Group."
+
+#: .\quest\templates\aboutus.html:69
+msgid "IvaMitText"
+msgstr ""
+"I am the author of a series of free mobile quests in remote Moscow "
+"districts, invented by the Ivanovsky and Inspiration Cultural Centers with "
+"the support of the Department of Culture of Moscow in 2017-2020. We even "
+"received a diploma in the \"Show Moscow\" competition (2021) for the quest "
+"\"My Yasenevo\"! I was happy to transfer this experience to Vyshka, because "
+"even the most famous heritage sites need to be told about them in an "
+"interesting, modern and original way. Our methodology is based on the theory "
+"of cultural geography and is designed to find and present the uniqueness of "
+"each place, i.e. in this project - to tell stories about Durasov's house, "
+"which will allow our users and pioneers to put together their own bright and "
+"memorable image of this HSE highlight."
+
+#: .\quest\templates\aboutus.html:71
+msgid "IvaMitImpact"
+msgstr ""
+"manages the project from FURD, developed routes and content, and prepared "
+"materials for the first and second quests"
+
+#: .\quest\templates\aboutus.html:81
+msgid "ProjectSupervisors"
+msgstr "Project supervisors"
+
+#: .\quest\templates\aboutus.html:85
+msgid "NatTit"
+msgstr "Natalya Titova"
+
+#: .\quest\templates\aboutus.html:88
+msgid "NatTitAffilation"
+msgstr ""
+"Head of Credit Processes at MTS Bank, Senior Lecturer at the Faculty of "
+"Computer Science of the National Research University Higher School of "
+"Economics"
+
+#: .\quest\templates\aboutus.html:90
+msgid "NatTitText"
+msgstr ""
+"My main field of activity is client analytics, the search for useful "
+"knowledge in client data (user behavior on the site, purchases, call center/"
+"chat data) for the effective development of client digital services "
+"(website, desktop or mobile application). As a project supervisor at HSE, I "
+"wanted to work with students to create an analytically sound prototype of "
+"the interface that would be most understandable and comfortable in practical "
+"use. I heard about the initiative to create a useful and developing quest "
+"game devoted to the history of the Durasov house and decided to participate "
+"in the project together with the 2nd year students of PMI and PAD FKN. An "
+"important aspect of such a project is practical and historical significance "
+"- the quest game we created and our current work on functionality will form "
+"the basis for the further development of initiatives to study the history of "
+"our institute and its immediate surroundings. I am very pleased that I was "
+"able to participate with the students in such a useful project. At this time "
+"it is very important to preserve historical memory, to educate and inculcate "
+"in the younger generation the preservation of objects of historical and "
+"cultural heritage."
+
+#: .\quest\templates\aboutus.html:94
+msgid "TatLob"
+msgstr "Tatiana Lobok"
+
+#: .\quest\templates\aboutus.html:96
+msgid "TatLobAffilation"
+msgstr ""
+"Head of the Center for Practice, Project Work and Entrepreneurship, Faculty "
+"of Computer Science, National Research University Higher School of Economics."
+
+#: .\quest\templates\aboutus.html:98
+msgid "TatLobText"
+msgstr ""
+"Student project work is part of the 2nd and 3rd year curriculum in all "
+"degree programs. Every year from August till October we collect more than "
+"700 projects from the HSE staff, as well as from external project managers "
+"from companies. It was during this period that I was approached by "
+"colleagues through the Dean of the Faculty, I.V. Arzhantsev, with a proposal "
+"to do a joint student project of FKN and FGRD - a quest excursion through "
+"the Durasov House. The idea was great, and I started looking for FCN "
+"students and the project leader who would be interested in such an unusual "
+"project work. Very quickly all the participants were identified and we began "
+"work. Many variants were proposed, many changes were made, many interesting "
+"things were invented in the process. The result of this work for me was the "
+"absolute certainty that \"combat\" projects are always more interesting than "
+"educational ones. Creation of this Quest was another confirmation of this "
+"hypothesis for me)."
+
+#: .\quest\templates\catalog.html:23
+msgid "DurationTime"
+msgstr "Quest duration: "
+
+#: .\quest\templates\catalog.html:28
+msgid "RestrictionsAndStartPoint"
+msgstr ""
+"Restrictions: only for HSE employees and students, 9:00-23:00 <br><br> "
+"Starting point: National Research University Higher School of Economics "
+"Campus at 11 Pokrovsky Boulevard"
+
+#: .\quest\templates\catalog.html:32
+msgid "QuestStart"
+msgstr "Start the quest"
+
+#: .\quest\templates\catalog.html:38
+msgid "NoQuests"
+msgstr "There are no quests here"
+
+#: .\quest\templates\feedback.html:12
+msgid "Thank4Feedback"
+msgstr "Thank you for your feedback"
+
+#: .\quest\templates\feedback.html:21
+msgid "ConvenienceQuestion"
+msgstr "1. How convenient is the interface of the quest?"
+
+#: .\quest\templates\feedback.html:26 .\quest\templates\feedback.html:69
+#: .\quest\templates\feedback.html:112 .\quest\templates\feedback.html:177
+#: .\quest\templates\feedback.html:220
+msgid "PointScale"
+msgstr "On a 10-point scale (0 - \"Difficult\", 10 - \"All very clear\")"
+
+#: .\quest\templates\feedback.html:65
+msgid "ComplexityQuestion"
+msgstr "2. How easy was it to register?"
+
+#: .\quest\templates\feedback.html:108
+msgid "QualityQuestion"
+msgstr ""
+"3. How satisfied are you with the quality of the texts and the description "
+"of the questions in the quest?"
+
+#: .\quest\templates\feedback.html:151
+msgid "WhatToDeleteQuestion"
+msgstr "4. What should be removed from the content of the quest?"
+
+#: .\quest\templates\feedback.html:154 .\quest\templates\feedback.html:165
+msgid "ShareComments"
+msgstr "Please share any comments you have."
+
+#: .\quest\templates\feedback.html:162
+msgid "WhatToAddQuestion"
+msgstr "5. What should be added to the content of the quest?"
+
+#: .\quest\templates\feedback.html:173
+msgid "HelpQuestion"
+msgstr ""
+"6. Did the quest help you learn more about the history of the campus on "
+"Pokrovsky Boulevard?"
+
+#: .\quest\templates\feedback.html:216
+msgid "RecommendationQuestion"
+msgstr ""
+"7. How likely would you be to recommend our quest to your friends and "
+"colleagues?"
+
+#: .\quest\templates\feedback.html:259
+msgid "WhySuchAnsQuestion"
+msgstr "8. Why did you give this answer?"
+
+#: .\quest\templates\feedback.html:262
+msgid "ExplainAnswer"
+msgstr "Give a brief explanation of your answer"
+
+#: .\quest\templates\feedback.html:270
+msgid "RateQuestion"
+msgstr "9. Evaluation of the quest as a whole"
+
+#: .\quest\templates\feedback.html:295 .\user\templates\register.html:35
+#: .\user\templates\report.html:23
+msgid "Send"
+msgstr "Send"
+
+#: .\quest\templates\index.html:10
+msgid "IndexText1"
+msgstr ""
+"National Research University Higher School of Economics offers you a series "
+"of fascinating and informative quests. <a href=\"/quest/aboutus.html\"> We </"
+"a> have invented them as a new format for learning about the history of our "
+"heritage, university buildings and their surroundings. Unusual routes with "
+"interesting stories and fascinating riddles will help to see familiar places "
+"from unusual angles and learn curious facts. The quests will help you get "
+"into the spirit of the university, learn about our values and our history - "
+"and just have fun alone or with friends and like-minded people!"
+
+#: .\quest\templates\index.html:12
+msgid "IndexText2"
+msgstr ""
+"You can go through such a quest at any convenient time, it requires only a "
+"phone with Internet access, your logic, wit, and, of course, the excitement "
+"of the discoverer."
+
+#: .\quest\templates\index.html:14
+msgid "IndexText3"
+msgstr ""
+"No need to download any applications! Play directly in your browser! Quests "
+"are designed so that even one will not be bored!"
+
+#: .\quest\templates\index.html:16
+msgid "IndexText4"
+msgstr ""
+"Walk around with the quest at any time and take breaks when you feel like it!"
+
+#: .\quest\templates\index.html:18
+msgid "IndexText5"
+msgstr ""
+"By the way, you can get <a href=\"/user/presents.html\"> nice bonuses</a> "
+"for completing the quests. Good luck!"
+
+#: .\quest\templates\index.html:20
+msgid "2TheQuestCatalog"
+msgstr "Go to quest catalog"
+
+#: .\quest\templates\play.html:16
+msgid "YouAreOn"
+msgstr "You are on the "
+
+#: .\quest\templates\play.html:18
+msgid "PageOut"
+msgstr "page out of"
+
+#: .\quest\templates\play.html:61
+msgid "TypeAnswer"
+msgstr "Type your answer"
+
+#: .\quest\templates\play.html:66
+msgid "QuestEndText"
+msgstr ""
+"We are really glag, that you've comleted the quest. Please share with us, "
+"your opinion. <br> Please, complete the survey <br> You will receive an "
+"additional 20 points for completing the survey. You can use these points in "
+"our gift store."
+
+#: .\quest\templates\play.html:69
+msgid "CompleteSurvey"
+msgstr "Complete the survey and get 20 points"
+
+#: .\quest\templates\play.html:71
+msgid "SkipSurvey"
+msgstr "Skip survey"
+
+#: .\quest\templates\play.html:73 .\templates\based_template.html:56
+msgid "QuestCatalog"
+msgstr "Quests catalog"
+
+#: .\quest\templates\play.html:75 .\templates\based_template.html:55
+#: .\user\templates\home.html:7
+msgid "Profile"
+msgstr "Profile"
+
+#: .\quest\templates\play.html:77 .\templates\based_template.html:58
+msgid "PrizeCatalog"
+msgstr "Prizes catalog"
+
+#: .\quest\templates\play.html:81
+msgid "EndQuest"
+msgstr "End the quest"
+
+#: .\quest\templates\play.html:83
+msgid "Next"
+msgstr "Next"
+
+#: .\quest\templates\play.html:97
+msgid "SkipQuestion"
+msgstr "Skip the question (you won't get points)"
+
+#: .\quest\templates\play.html:105
+msgid "Wrong"
+msgstr "Wrong"
+
+#: .\quest\templates\play.html:113
+msgid "Hint"
+msgstr "Hint: "
+
+#: .\quest\templates\play.html:127
+msgid "GetHint"
+msgstr "Get a hint (-2 point)"
+
+#: .\templates\based_template.html:59
+msgid "Comments"
+msgstr "Comments"
+
+#: .\templates\based_template.html:64
+msgid "Menu"
+msgstr "MENU"
+
+#: .\templates\based_template.html:95
+msgid "Rights"
+msgstr "© 2022 All rights reserved     "
+
+#: .\templates\based_template.html:95
+msgid "ReportAnError"
+msgstr "Report an error"
+
+#: .\templates\based_template.html:96
+msgid "Contacts"
+msgstr "Technical support contacts: "
+
+#: .\templates\forbidden.html:9
+msgid "AccessDenied"
+msgstr "Access denied"
+
+#: .\templates\forbidden.html:10
+msgid "Log4Access"
+msgstr "Log in to access the quest"
+
+#: .\templates\forbidden.html:11
+msgid "LogIn"
+msgstr "Log in"
+
+#: .\user\templates\home.html:10
+msgid "YouLoggedIn"
+msgstr "You are logged in."
+
+#: .\user\templates\home.html:11
+msgid "Welcome"
+msgstr "Welcome!"
+
+#: .\user\templates\home.html:12
+msgid "YouHave"
+msgstr "You have"
+
+#: .\user\templates\home.html:12 .\user\templates\presents.html:28
+msgid "Pts"
+msgstr "points"
+
+#: .\user\templates\home.html:15
+msgid "LogOut"
+msgstr "Log out"
+
+#: .\user\templates\home.html:17
+msgid "NotLoggedIn"
+msgstr "You are not logged in."
+
+#: .\user\templates\home.html:18 .\user\templates\login.html:16
+#: .\user\templates\logout.html:13 .\user\templates\register.html:17
+msgid "Login"
+msgstr "Login"
+
+#: .\user\templates\home.html:19 .\user\templates\login.html:25
+#: .\user\templates\logout.html:17 .\user\templates\register.html:9
+msgid "Registration"
+msgstr "Registration"
+
+#: .\user\templates\login.html:10
+msgid "AuthErr"
+msgstr "Authentication error"
+
+#: .\user\templates\login.html:12 .\user\templates\login.html:22
+#: .\user\templates\register.html:38
+msgid "Enter"
+msgstr "Log in"
+
+#: .\user\templates\login.html:19 .\user\templates\register.html:23
+msgid "Password"
+msgstr "Password, not less than 8 symbols"
+
+#: .\user\templates\logout.html:10
+msgid "YouLoggedOut"
+msgstr "You are logged out"
+
+#: .\user\templates\presents.html:9
+msgid "GetPrizeText"
+msgstr ""
+"<b>Your gift request was emailed to studcentre@hse.ru</b> <p>To receive a "
+"prize based on the results of the quest you need to contact <a href="
+"\"https://studentcentre.hse.ru/\">Service Center \"Student\"</a> (Moscow, "
+"Pokrovsky Bulvar 11, entrance 5, on the right from entrance 1). </p> "
+"<p>Opening hours: Mon-Fri 10:00-19:00  </p> <p>At the reception is simply "
+"enough to show the results of the quest from your mobile device - email, "
+"login, and the number of points earned.</p> <p>You must have your passport</"
+"p>"
+
+#: .\user\templates\presents.html:28
+msgid "PresentCost"
+msgstr "Present сost"
+
+#: .\user\templates\presents.html:33
+msgid "GetPresent"
+msgstr "Get present"
+
+#: .\user\templates\presents.html:39
+msgid "NoPresents"
+msgstr "There are no presents here"
+
+#: .\user\templates\register.html:14
+msgid "FullName"
+msgstr "Full name"
+
+#: .\user\templates\register.html:26
+msgid "RepeatPassword"
+msgstr "Repeat the password"
+
+#: .\user\templates\register.html:31
+msgid "DataProtectionText"
+msgstr ""
+"I confirm that I have personally read the <a href=\"https://www.hse.ru/"
+"data_protection_regulation\">Regulation on Personal Data Processing at HSE</"
+"a> and have the right to provide my personal data and give my consent to its "
+"processing. By providing my personal data, I accept the terms of this "
+"Regulation, confirm that they apply to me, are accurate and up-to-date, "
+"thereby freely, willingly and in my own interest manage them, understand the "
+"consequences of providing them and express my consent to their processing in "
+"accordance with clause 3.7 of the <a href=\"https://www.hse.ru/"
+"data_protection_regulation\">Regulation on processing of personal data of "
+"HSE</a>."
+
+#: .\user\templates\register.html:38
+msgid "AlreadyRegistered"
+msgstr "Already created an account?"
+
+#: .\user\templates\register.html:41
+msgid "RegistrationError"
+msgstr "Registration error"
+
+#: .\user\templates\report.html:8
+msgid "MessageSent"
+msgstr "The message is sent"
+
+#: .\user\templates\report.html:12
+msgid "SendErrorReport"
+msgstr "Send an error report"
+
+#: .\user\templates\report.html:17
+msgid "Message"
+msgstr "Message"
+
+#~ msgid "University"
+#~ msgstr "University"
+
+#~ msgid "Degree"
+#~ msgstr "Education level"
+
+#~ msgid "Faculty"
+#~ msgstr "Faculty"
+
+#, fuzzy
+#~| msgid "Registration"
+#~ msgid "Register"
+#~ msgstr "Registration"
+
+#~ msgid "7ang"
+#~ msgstr "en"

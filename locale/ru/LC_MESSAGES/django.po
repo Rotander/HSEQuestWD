@@ -1,0 +1,574 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-23 20:02+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\HSEQuest\settings.py:87
+msgid "English"
+msgstr "EN"
+
+#: .\HSEQuest\settings.py:88
+msgid "Russian"
+msgstr "Русский язык"
+
+#: .\quest\templates\aboutus.html:11 .\templates\based_template.html:57
+msgid "AboutUs"
+msgstr "О нас"
+
+#: .\quest\templates\aboutus.html:15
+msgid "TechnicalDevelopment"
+msgstr "Техническая разработка"
+
+#: .\quest\templates\aboutus.html:19
+msgid "ArtMak"
+msgstr "Макаров Артём"
+
+#: .\quest\templates\aboutus.html:22
+msgid "ArtMakAffilation"
+msgstr ""
+"Факультет компьютерных наук, образовательная программа бакалавриата "
+"«Прикладной анализ данных», 2 курс"
+
+#: .\quest\templates\aboutus.html:24
+msgid "ArtMakText"
+msgstr ""
+"В ноябре 2021 года мне нужно было выбрать тему для проектной курсовой работы "
+"и, когда я увидел предложение о создании платформы для квеста, связанного с "
+"нашим кампусом, я подумал, что это отличная возможность не просто получить "
+"оценку, но и сделать что-то полезное для своего университета, внести вклад. "
+"Работа над нашим творением протекала довольно приятно, так как и мои научные "
+"руководители, и напарник крайне профессионально подошли к нашему делу, что "
+"позволило выполнить всё качественно и в срок."
+
+#: .\quest\templates\aboutus.html:28
+msgid "AleIva"
+msgstr "Иванов Александр"
+
+#: .\quest\templates\aboutus.html:30
+msgid "AleIvaAffilation"
+msgstr ""
+"Факультет компьютерных наук, образовательная программа бакалавриата "
+"«Прикладная математика и информатика», 2 курс"
+
+#: .\quest\templates\aboutus.html:32
+msgid "AleIvaText"
+msgstr ""
+"Я присоединился к проекту, потому что мне было интересно сделать что-то "
+"практическое и полезное. Так же я хотел получить опыт написания бекэнда и "
+"администрирования сайтов."
+
+#: .\quest\templates\aboutus.html:40
+msgid "ContentDevelopment"
+msgstr "Разработка контента"
+
+#: .\quest\templates\aboutus.html:44
+msgid "VasUkr"
+msgstr "Украинский Василий"
+
+#: .\quest\templates\aboutus.html:47
+msgid "VasUkrAffilation"
+msgstr ""
+"Студент 3 курса ОП «Городское планирование», урбанист с интересом к местной "
+"истории, москвич в четвёртом поколении."
+
+#: .\quest\templates\aboutus.html:50
+msgid "VasUkrText"
+msgstr ""
+"Я недолго думал при выборе проекта – у меня довольно богатый опыт участия в "
+"городских квестах, в том числе и в качестве организатора и составителя; идея "
+"сделать для университета то, что я умею и люблю, показалась мне крайне "
+"ценной. Привлекла меня и возможность рассказать другим студентам о доме "
+"Дурасова, решив проблему недостатка интересных и структурированных "
+"материалов о его истории. Именно умение выстраивать нарратив из разрозненных "
+"фактов, обнаруженных при анализе самых неожиданных источников, – главное, "
+"чему я научился при работе над квестом"
+
+#: .\quest\templates\aboutus.html:51
+msgid "VasUkrImpact"
+msgstr ""
+"разрабатывал маршруты и содержание, готовил материалы для первого и второго "
+"квестов"
+
+#: .\quest\templates\aboutus.html:55
+msgid "KatBab"
+msgstr "Бабурина Катерина"
+
+#: .\quest\templates\aboutus.html:57
+msgid "KatBabAffilation"
+msgstr ""
+"Участница Проектной группы «Культурная и гуманитарная география города», "
+"студентка факультета городского и регионального развития НИУ ВШЭ"
+
+#: .\quest\templates\aboutus.html:59
+msgid "KatBabText"
+msgstr ""
+"Проект по созданию урбанистических квестов заинтересовал меня нетипичной "
+"формой своеобразного «перерождения» исторических фактов. Сделав выбор в "
+"пользу квеста как способа рассказать и показать, команда нашего проекта "
+"надеется привлечь больше внимания к темам, которые мы поднимаем. Как сказал "
+"Альберт Эйнштейн, «Игра – высшая форма исследования», так что предлагаем "
+"поиграть :) "
+
+#: .\quest\templates\aboutus.html:61
+msgid "KatBabImpact"
+msgstr "участвовала в разработке маршрута первого квеста"
+
+#: .\quest\templates\aboutus.html:65
+msgid "IvaMit"
+msgstr "Иван Игоревич Митин"
+
+#: .\quest\templates\aboutus.html:67
+msgid "IvaMitAffilation"
+msgstr ""
+"Кандидат географических наук, доцент Высшей школы урбанистики им. А.А. "
+"Высоковского факультета городского и регионального развития, руководитель "
+"Проектной группы «Культурная и гуманитарная география города». "
+
+#: .\quest\templates\aboutus.html:69
+msgid "IvaMitText"
+msgstr ""
+"Я автор серии бесплатных мобильных квестов по удалённым районам Москвы, "
+"придуманной культурными центрами «Ивановский» и «Вдохновение» при поддержке "
+"Департамента культуры г. Москвы в 2017–2020 гг. Мы даже получили диплом "
+"конкурса «Покажи Москву» (2021) за квест «Моё Ясенево»! Этот опыт я с "
+"радостью перенёс в Вышку, потому что даже самые известные объекты наследия "
+"нуждаются в том, чтобы о них рассказали интересно, современно и оригинально. "
+"Наша методика основана на теории культурной географии и призвана найти и "
+"представить уникальность каждого места, т.е. в этом проекте – рассказать "
+"истории о доме Дурасова, которые позволят нашим пользователям и "
+"первопроходцам сложить свой яркий и запоминающийся образ этой вышкинской "
+"изюминки. "
+
+#: .\quest\templates\aboutus.html:71
+msgid "IvaMitImpact"
+msgstr ""
+"руководит проектом от ФГРР, разрабатывал маршруты и содержание, готовил "
+"материалы для первого и второго квестов"
+
+#: .\quest\templates\aboutus.html:81
+msgid "ProjectSupervisors"
+msgstr "Кураторы проекта"
+
+#: .\quest\templates\aboutus.html:85
+msgid "NatTit"
+msgstr "Титова Наталья"
+
+#: .\quest\templates\aboutus.html:88
+msgid "NatTitAffilation"
+msgstr ""
+"Руководитель направления кредитных процессов в МТС-БАНК, старший "
+"преподаватель Факультета Компьютерных Наук НИУ ВШЭ."
+
+#: .\quest\templates\aboutus.html:90
+msgid "NatTitText"
+msgstr ""
+"Основная сфера моей деятельность — это клиентская аналитика, поиск полезных "
+"знаний в клиентских данных (поведение пользователей на сайте, покупки, "
+"данные колл-центров/чатов) для эффективного развития клиентских digital-"
+"сервиса (сайт, десктопного или мобильного приложения). Мне как куратору "
+"проектов во ВШЭ хотелось со студентами создать аналитически обоснованный "
+"прототип интерфейса, который будет наиболее понятным и комфортным при "
+"практическом использовании. Я узнала про инициативу создания полезной и "
+"развивающей квест-игры, посвящённой истории дома Дурасовых и решила вместе "
+"со студентами 2 курса ПМИ и ПАД ФКН принять участие в проекте. Важным "
+"аспектом такого проекта является практическая и историческая значимость - "
+"созданная нами квест-игра и наши текущий наработки по функционалу войдут в "
+"основу дальнейшего развития инициатив по изучению истории нашего института и "
+"его ближайших окрестностей. Я очень рада тому, что смогла вместе со "
+"студентами принять участие в таком полезном проекте. В наше время очень "
+"важно сохранять историческую память, воспитывать и прививать в молодом "
+"поколении сохранение объектов историко-культурного наследия."
+
+#: .\quest\templates\aboutus.html:94
+msgid "TatLob"
+msgstr "Лобок Татьяна"
+
+#: .\quest\templates\aboutus.html:96
+msgid "TatLobAffilation"
+msgstr ""
+"Руководитель Центра практик, проектной работы и предпринимательства "
+"Факультета Компьютерных Наук НИУ ВШЭ."
+
+#: .\quest\templates\aboutus.html:98
+msgid "TatLobText"
+msgstr ""
+"На ФКН я занимаюсь всем, что связано с практической подготовкой студентов – "
+"организация учебных практик, проектная работа, развитие предпринимательских "
+"проектов наших студентов. Проектная работа студентов входит в учебный план 2-"
+"го и 3-го курсов всех образовательных программ. Ежегодно с августа по "
+"октябрь мы собираем более 700 проектов как от сотрудников НИУ ВШЭ, так и от "
+"внешних руководителей проектов из компаний. Именно в этот период ко мне "
+"через декана факультета Аржанцева И.В. и обратились коллеги с предложением "
+"сделать совместный студенческий проект ФКН и ФГРР – квест-экскурсию по дому "
+"Дурасова. Идея была отличная и я стала искать студентов ФКН и руководителя "
+"проекта, которые были бы заинтересованы в такой необычной проектной работе. "
+"Очень быстро все участники были определены и мы начали работу. Много "
+"вариантов было предложено, много изменений внесено, много всего интересного "
+"было придумано в процессе. Итогом данной работы для меня стала абсолютная "
+"уверенность в том, что «боевые» проекты всегда интереснее учебных. Создание "
+"данного Квеста стало для меня очередным подтверждением этой гипотезы)."
+
+#: .\quest\templates\catalog.html:23
+msgid "DurationTime"
+msgstr "Продолжительность квеста: "
+
+#: .\quest\templates\catalog.html:28
+msgid "RestrictionsAndStartPoint"
+msgstr ""
+"Ограничения: только для сотрудников и студентов НИУ ВШЭ, 9:00-23:00 <br><br> "
+"Точка старта :Кампус НИУ ВШЭ на Покровском бульваре, 11"
+
+#: .\quest\templates\catalog.html:32
+msgid "QuestStart"
+msgstr "Начать квест"
+
+#: .\quest\templates\catalog.html:38
+msgid "NoQuests"
+msgstr "Квестов нет"
+
+#: .\quest\templates\feedback.html:12
+msgid "Thank4Feedback"
+msgstr "Спасибо за Вашу обратную связь!"
+
+#: .\quest\templates\feedback.html:21
+msgid "ConvenienceQuestion"
+msgstr "1. Насколько удобен интерфейс квеста?"
+
+#: .\quest\templates\feedback.html:26 .\quest\templates\feedback.html:69
+#: .\quest\templates\feedback.html:112 .\quest\templates\feedback.html:177
+#: .\quest\templates\feedback.html:220
+msgid "PointScale"
+msgstr "По 10-балльной шкале (0 – «Сложно», 10 — «Всё очень понятно»)"
+
+#: .\quest\templates\feedback.html:65
+msgid "ComplexityQuestion"
+msgstr "2. Насколько просто было пройти регистрацию?"
+
+#: .\quest\templates\feedback.html:108
+msgid "QualityQuestion"
+msgstr ""
+"3. Насколько Вы удовлетворены качеством текстов и описанием вопросов в "
+"квесте?"
+
+#: .\quest\templates\feedback.html:151
+msgid "WhatToDeleteQuestion"
+msgstr "4. Что стоит убрать из содержания квеста?"
+
+#: .\quest\templates\feedback.html:154 .\quest\templates\feedback.html:165
+msgid "ShareComments"
+msgstr "Просим поделиться любыми комментариями."
+
+#: .\quest\templates\feedback.html:162
+msgid "WhatToAddQuestion"
+msgstr "5. Что стоит добавить в содержание квеста?"
+
+#: .\quest\templates\feedback.html:173
+msgid "HelpQuestion"
+msgstr ""
+"6. Квест помог Вам лучше узнать историю кампуса на Покровском бульваре?"
+
+#: .\quest\templates\feedback.html:216
+msgid "RecommendationQuestion"
+msgstr ""
+"7. Какова вероятность того, что Вы порекомендуете наш квест друзьям и "
+"коллегам?"
+
+#: .\quest\templates\feedback.html:259
+msgid "WhySuchAnsQuestion"
+msgstr "8. Почему Вы дали такой ответ?"
+
+#: .\quest\templates\feedback.html:262
+msgid "ExplainAnswer"
+msgstr "Дайте краткое пояснение Вашего ответа"
+
+#: .\quest\templates\feedback.html:270
+msgid "RateQuestion"
+msgstr "9. Оценка квеста в целом"
+
+#: .\quest\templates\feedback.html:295 .\user\templates\register.html:35
+#: .\user\templates\report.html:23
+msgid "Send"
+msgstr "Отправить"
+
+#: .\quest\templates\index.html:10
+msgid "IndexText1"
+msgstr ""
+"Национальный исследовательский университет «Высшая школа экономики» "
+"предлагает Вашему вниманию серию увлекательных и познавательных квестов. <a "
+"href=\"/quest/aboutus.html\">Мы</a> придумали их как новый формат знакомства "
+"с историей нашего наследия, зданий университета и их окрестностей. Необычные "
+"маршруты с интересными историями и увлекательными загадками помогут увидеть "
+"знакомые места с непривычных ракурсов и узнать любопытные факты. Квесты "
+"помогут приобщиться к духу университета, узнать о наших ценностях и нашей "
+"истории - и просто весело провести время в одиночку или  в компании друзей и "
+"единомышленников!"
+
+#: .\quest\templates\index.html:12
+msgid "IndexText2"
+msgstr ""
+"Пройти такой квест вы сможете в любое удобное время, для этого нужен только "
+"телефон с доступом в интернет, ваша логика, смекалка и, конечно, азарт "
+"первооткрывателя."
+
+#: .\quest\templates\index.html:14
+msgid "IndexText3"
+msgstr ""
+"Не нужно скачивать никаких приложений! Играйте прямо в браузере! Квесты "
+"составлены так, что даже одному будет не скучно"
+
+#: .\quest\templates\index.html:16
+msgid "IndexText4"
+msgstr "Гуляйте с квестом в любое время и делайте перерывы, когда захочется!"
+
+#: .\quest\templates\index.html:18
+msgid "IndexText5"
+msgstr ""
+"Кстати, за прохождение квестов можно получить <a href=\"/user/presents.html"
+"\"> приятные бонусы </a>. Удачи!"
+
+#: .\quest\templates\index.html:20
+msgid "2TheQuestCatalog"
+msgstr "Перейти к каталогу квестов"
+
+#: .\quest\templates\play.html:16
+msgid "YouAreOn"
+msgstr "Вы на странице "
+
+#: .\quest\templates\play.html:18
+msgid "PageOut"
+msgstr "из "
+
+#: .\quest\templates\play.html:61
+msgid "TypeAnswer"
+msgstr "Напишите ответ"
+
+#: .\quest\templates\play.html:66
+msgid "QuestEndText"
+msgstr ""
+"Мы очень рады, что вы прошли наш квест до конца. Мы будем очень рады вашей "
+"обратной связи. <br> Пожалуйста, пройтите опрос. <br> За прохождение опросы "
+"вы получите дополнительные 20 баллов. Данными баллами вы сможете "
+"воспользоваться в нашем магазине подарков."
+
+#: .\quest\templates\play.html:69
+msgid "CompleteSurvey"
+msgstr "Пройти опрос и получить 20 баллов"
+
+#: .\quest\templates\play.html:71
+msgid "SkipSurvey"
+msgstr "Пропустить опрос"
+
+#: .\quest\templates\play.html:73 .\templates\based_template.html:56
+msgid "QuestCatalog"
+msgstr "Каталог квестов"
+
+#: .\quest\templates\play.html:75 .\templates\based_template.html:55
+#: .\user\templates\home.html:7
+msgid "Profile"
+msgstr "Профиль"
+
+#: .\quest\templates\play.html:77 .\templates\based_template.html:58
+msgid "PrizeCatalog"
+msgstr "Каталог призов"
+
+#: .\quest\templates\play.html:81
+msgid "EndQuest"
+msgstr "Закончить квест"
+
+#: .\quest\templates\play.html:83
+msgid "Next"
+msgstr "Далее"
+
+#: .\quest\templates\play.html:97
+msgid "SkipQuestion"
+msgstr "Пропустить вопрос (вы не получите баллы)"
+
+#: .\quest\templates\play.html:105
+msgid "Wrong"
+msgstr "Неправильно"
+
+#: .\quest\templates\play.html:113
+msgid "Hint"
+msgstr "Подсказка: "
+
+#: .\quest\templates\play.html:127
+msgid "GetHint"
+msgstr "Получить подсказку (-2 баллов)"
+
+#: .\templates\based_template.html:59
+msgid "Comments"
+msgstr "Отзывы"
+
+#: .\templates\based_template.html:64
+msgid "Menu"
+msgstr "МЕНЮ"
+
+#: .\templates\based_template.html:95
+msgid "Rights"
+msgstr "© 2022 г. Все права защищены     "
+
+#: .\templates\based_template.html:95
+msgid "ReportAnError"
+msgstr "Сообщить об ошибке"
+
+#: .\templates\based_template.html:96
+msgid "Contacts"
+msgstr "Контакты технической поддержки: "
+
+#: .\templates\forbidden.html:9
+msgid "AccessDenied"
+msgstr "Доступ запрещен"
+
+#: .\templates\forbidden.html:10
+msgid "Log4Access"
+msgstr "Выполните вход, чтобы получить доступ"
+
+#: .\templates\forbidden.html:11
+msgid "LogIn"
+msgstr "Войти в аккаунт"
+
+#: .\user\templates\home.html:10
+msgid "YouLoggedIn"
+msgstr "Вход выполнен,"
+
+#: .\user\templates\home.html:11
+msgid "Welcome"
+msgstr "Добро пожаловать!"
+
+#: .\user\templates\home.html:12
+msgid "YouHave"
+msgstr "У вас"
+
+#: .\user\templates\home.html:12 .\user\templates\presents.html:28
+msgid "Pts"
+msgstr "баллов"
+
+#: .\user\templates\home.html:15
+msgid "LogOut"
+msgstr "Выйти"
+
+#: .\user\templates\home.html:17
+msgid "NotLoggedIn"
+msgstr "Вход не выполнен"
+
+#: .\user\templates\home.html:18 .\user\templates\login.html:16
+#: .\user\templates\logout.html:13 .\user\templates\register.html:17
+msgid "Login"
+msgstr "Логин"
+
+#: .\user\templates\home.html:19 .\user\templates\login.html:25
+#: .\user\templates\logout.html:17 .\user\templates\register.html:9
+msgid "Registration"
+msgstr "Регистрация"
+
+#: .\user\templates\login.html:10
+msgid "AuthErr"
+msgstr "Ошибка аутентификации"
+
+#: .\user\templates\login.html:12 .\user\templates\login.html:22
+#: .\user\templates\register.html:38
+msgid "Enter"
+msgstr "Войти"
+
+#: .\user\templates\login.html:19 .\user\templates\register.html:23
+msgid "Password"
+msgstr "Пароль (не менее 8 символов)"
+
+#: .\user\templates\logout.html:10
+msgid "YouLoggedOut"
+msgstr "Вы вышли из личного кабинета"
+
+#: .\user\templates\presents.html:9
+msgid "GetPrizeText"
+msgstr ""
+"<b>Ваш запрос на получение подарка отправился на почту studcentre@hse.ru</b> "
+"<p>Для получения приза по результатам прохождения квеста необходимо "
+"обратиться в <a href=\"https://studentcentre.hse.ru/\">Центр сервиса "
+"\"Студент\"</a> (г. Москва, Покровский бульвар, д. 11, вход 5, правее от "
+"входа 1). </p> <p>Время работы: Пн.-Пт. 10:00-19:00  </p> <p>На ресепшн "
+"достаточно просто показать со своего мобильного устройства результаты "
+"прохождения квеста - email, логин и количество набранных баллов.</p> <p>При "
+"себе необходимо иметь паспорт</p>"
+
+#: .\user\templates\presents.html:28
+msgid "PresentCost"
+msgstr "Стоимость приза"
+
+#: .\user\templates\presents.html:33
+msgid "GetPresent"
+msgstr "Получить приз"
+
+#: .\user\templates\presents.html:39
+msgid "NoPresents"
+msgstr "Подарков нет"
+
+#: .\user\templates\register.html:14
+msgid "FullName"
+msgstr "ФИО"
+
+#: .\user\templates\register.html:26
+msgid "RepeatPassword"
+msgstr "Повторить пароль"
+
+#: .\user\templates\register.html:31
+msgid "DataProtectionText"
+msgstr ""
+"Я подтверждаю, что лично ознакомился с <a href=\"https://www.hse.ru/"
+"data_protection_regulation\"> Положением об обработке персональных данных "
+"НИУ ВШЭ</a>, вправе предоставить свои персональные данные и давать согласие "
+"на обработку. Предоставляя свои персональные данные, принимаю условия этого "
+"Положения, подтверждаю, что они относятся ко мне, являются точными и "
+"актуальными, тем самым свободно, своей волей и в\tсвоем интересе "
+"распорядаюсь ими, осознаю последствия их предоставления и выражаю свое "
+"согласие на их обработку в соответсвии с пунктом 3.7 <a href=\"https://www."
+"hse.ru/data_protection_regulation\"> Положения об обработке персональных "
+"данных НИУ ВШЭ</a>."
+
+#: .\user\templates\register.html:38
+msgid "AlreadyRegistered"
+msgstr "Уже зарегистрированы?"
+
+#: .\user\templates\register.html:41
+msgid "RegistrationError"
+msgstr "Ошибка регистрации"
+
+#: .\user\templates\report.html:8
+msgid "MessageSent"
+msgstr "Сообщение отправлено"
+
+#: .\user\templates\report.html:12
+msgid "SendErrorReport"
+msgstr "Отправить сообщение об ошибке"
+
+#: .\user\templates\report.html:17
+msgid "Message"
+msgstr "Сообщение"
+
+#~ msgid "University"
+#~ msgstr "Университет"
+
+#~ msgid "Degree"
+#~ msgstr "Уровень образования"
+
+#~ msgid "Faculty"
+#~ msgstr "Факультет"
+
+#~ msgid "7ang"
+#~ msgstr "ru"
