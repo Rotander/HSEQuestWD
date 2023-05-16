@@ -3,6 +3,9 @@ from django.urls import re_path
 
 
 urlpatterns = [
+    re_path(r'^user_admin', views.user_admin, name='user_admin'),
+    re_path(r'^new', views.new, name='new'),
+    re_path(r'^edit', views.edit, name='edit'),
     re_path(r'^catalog', views.catalog, name='catalog'),
     re_path(r'^play', views.new_play, name='new_play'),
     re_path(r'^feedback', views.feedback, name='feedback'),

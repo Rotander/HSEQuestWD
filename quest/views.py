@@ -1,8 +1,10 @@
 import csv
+
 from django.http import Http404, HttpResponse
 from django.shortcuts import render
+
 from quest.models import CorrectPageAnswer, FeedBack
-from quest.models import PageAnswer, PageHint, Quest, QuestPage
+from quest.models import PageAnswer, PageHint, Quest, Scene, Points
 from quest.models import PageParagraph
 from user.models import Game, User
 
@@ -66,7 +68,7 @@ def new_play(request):
         game.save()
 
     page_num = game.last_page
-    pages = QuestPage.objects.filter(quest=quest)
+    pages = Scene.objects.filter(quest=quest)
     quest_size = len(pages)
     page = pages[page_num]
     # if lang is eng
@@ -231,7 +233,6 @@ def feedback(request):
         user_name=str(user), q_id=q_id))
 
     if request.POST and not res['feedback_send']:
-
         feedback = FeedBack(
             q_id=q_id,
             user_name=str(user),
@@ -244,7 +245,7 @@ def feedback(request):
             recommendation=int(request.POST.get('recommendation', -1)),
             why_such_ans=request.POST.get('why_such_ans', '.'),
             rate=int(request.POST.get('rate', -1)),
-            )
+        )
         feedback.save()
         res['feedback_send'] = True
 
@@ -269,7 +270,7 @@ def export_users_pages_csv(request):
     writer.writerow([
         'email',
         'last_page',
-        ])
+    ])
 
     quest = Quest.objects.filter(id=1)[0]
     users = User.objects.all()
@@ -296,7 +297,7 @@ def export_finished_users_csv(request):
     writer = csv.writer(response)
     writer.writerow([
         'email',
-        ])
+    ])
 
     quest = Quest.objects.filter(id=1)[0]
     users = User.objects.all()
@@ -305,7 +306,7 @@ def export_finished_users_csv(request):
             game = Game.objects.filter(profile=user, quest=quest)[0]
         else:
             continue
-        if game.last_page + 1 == len(QuestPage.objects.filter(quest=quest)):
+        if game.last_page + 1 == len(Scene.objects.filter(quest=quest)):
             writer.writerow([user.email])
 
     return response
@@ -342,8 +343,50 @@ def export_feedback_csv(request):
         'recommendation',
         'why_such_ans',
         'rate',
-        )
+    )
     for feedback in feedbacks:
         writer.writerow(feedback)
 
     return response
+
+
+def user_admin(request):
+    if 'lang' in request.GET:
+        request.session['lang'] = int(request.GET['lang'])
+    else:
+        request.session['lang'] = request.session.get('lang', 0)
+    return render(
+        request,
+        'user_admin.html',
+        {
+            'quest_list': Quest.objects.all(),
+            'user': request.user,
+        })
+
+
+def new(request):
+    if 'lang' in request.GET:
+        request.session['lang'] = int(request.GET['lang'])
+    else:
+        request.session['lang'] = request.session.get('lang', 0)
+    return render(
+        request,
+        'new.html',
+        {})
+
+
+def edit(request):
+    if 'lang' in request.GET:
+        request.session['lang'] = int(request.GET['lang'])
+    else:
+        request.session['lang'] = request.session.get('lang', 0)
+    return render(
+        request,
+        'new.html',
+    {
+        'scene_list': Scene.objects.all(),
+        'points_list': Points.objects.all(),
+    })
+
+
+

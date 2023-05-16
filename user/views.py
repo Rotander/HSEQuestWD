@@ -4,7 +4,6 @@ from django.core.mail import send_mail
 from django.core.validators import validate_email
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
-from msal import PublicClientApplication
 
 from user.models import ErrorReport, Present, User
 
@@ -49,12 +48,6 @@ def signup(request):
         page = render(request, 'register.html', {
             'failed': failed, 'err_message': err_message})
     return page
-
-
-def msal_signin(request):
-    app = PublicClientApplication("4403a646-2af8-42ba-a2b1-4f5a50a5b376",
-                                  authority="https://auth.hse.ru/adfs/oauth2/authorize")
-
 
 def signin(request):
     if 'lang' in request.GET:

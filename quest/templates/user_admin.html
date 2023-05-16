@@ -1,0 +1,26 @@
+{% extends "based_template.html" %}
+{% block content %}
+
+{% load static %}
+{% load i18n %}
+
+{% if quest_list %}
+{% for quest in quest_list %}
+<div class="bblock">
+    <div class="quest_name">
+        <a href="/quest/edit?q_id={{quest.id}}">
+            {% if LANGUAGE_CODE == "en" %} {{ quest.quest_name_en }} {% else %} {{ quest.quest_name_ru }} {% endif %}
+        </a>
+    </div>
+    <br>
+</div>
+{% endfor %}
+{% else %}
+<p>
+    {% trans 'NoQuests' %}
+</p>
+{% endif %}
+<a class="add_quest_button" href="/quest/new">
+        {% trans 'Добавить квест' %}
+    </a>
+{% endblock %}

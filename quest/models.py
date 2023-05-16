@@ -18,33 +18,22 @@ class Quest(models.Model):
         upload_to="uploads", help_text="Upload an image for the quest")
     quest_time = models.CharField(
         max_length=10, help_text="Enter estimate time to complete the "
-        "quest (minutes)")
+                                 "quest (minutes)")
 
     def __str__(self):
         return self.quest_name_en
 
 
-class QuestPage(models.Model):
-    page_number = models.IntegerField(
-        help_text="Enter the page's number (min is 0)")
-    voice_ru = models.FileField(
-        upload_to="uploads", help_text="Upload the voice acting "
-        "(ru, optional)", blank=True)
-    voice_en = models.FileField(
-        upload_to="uploads", help_text="Upload the voice acting "
-        "(en, optional)", blank=True)
+class Scene(models.Model):
+    name = models.CharField(
+        max_length=50, help_text="Enter the scene's name (ru)")
+    panorama = models.ImageField(
+        upload_to="uploads", help_text="Upload an panorama for the quest")
     quest = models.ForeignKey(
         Quest,
         on_delete=models.CASCADE,
-        help_text="Select a quest for this page",
+        help_text="Select a quest for this scene",
     )
-
-    class Meta:
-        ordering = ["page_number"]
-
-    def __str__(self):
-        return str(self.quest) + ", pg " + str(self.page_number)
-
 
 class PageParagraph(models.Model):
     number = models.IntegerField(
@@ -59,7 +48,7 @@ class PageParagraph(models.Model):
     )
     image = models.ImageField(
         upload_to="uploads", help_text="Upload the image for the "
-        "paragraph (optional)", null=True, blank=True)
+                                       "paragraph (optional)", null=True, blank=True)
     image_description_en = models.TextField(
         help_text="image desctiption en",
         blank=True,
@@ -69,27 +58,48 @@ class PageParagraph(models.Model):
         blank=True,
     )
     page = models.ForeignKey(
-        QuestPage,
+        Scene,
         on_delete=models.CASCADE,
         help_text="Select a page for this Paragraph",
     )
 
-    class Meta:
-        ordering = ["number"]
 
-    def __str__(self):
-        return str(self.page) + ", p " + str(self.number)
+class Points(models.Model):
+    coord = models.IntegerField(
+        help_text="Enter the coordinates")
+    text = models.TextField(
+        help_text="Text for the scene", blank=True)
+    hint = models.TextField(
+        help_text="Text for the hint scene", blank=True)
+    answer = models.TextField(
+        help_text="Text for the scene", blank=True)
+    audio = models.FileField(
+        upload_to="uploads", help_text="Upload the voice acting "
+                                       "(ru, optional)", blank=True)
+    quest_scene = models.ForeignKey(
+        Scene,
+        on_delete=models.CASCADE,
+        help_text="Select a page for this answer",
+        null=True,
+    )
+
+class Meta:
+    ordering = ["number"]
+
+
+def __str__(self):
+    return str(self.page) + ", p " + str(self.number)
 
 
 class PageAnswer(models.Model):
     page_answer_ru = models.CharField(
         max_length=30, help_text="Enter an answer for the page "
-        "(ru, only lower case)")
+                                 "(ru, only lower case)")
     page_answer_en = models.CharField(
         max_length=30, help_text="Enter an answer for the page "
-        "(en, only lower case)")
+                                 "(en, only lower case)")
     quest_page = models.ForeignKey(
-        QuestPage,
+        Scene,
         on_delete=models.CASCADE,
         help_text="Select a page for this answer",
         null=True,
@@ -103,9 +113,9 @@ class PageHint(models.Model):
     hint_text_ru = models.TextField(help_text="Enter a hint for the page (ru)")
     hint_text_en = models.TextField(help_text="Enter a hint for the page (en)")
     quest_page = models.ForeignKey(
-        QuestPage,
+        Scene,
         on_delete=models.CASCADE,
-        help_text="Select a page for this hint",
+        help_text="Select a scene for this hint",
         null=True,
     )
 
@@ -133,12 +143,12 @@ class FeedBack(models.Model):
 class CorrectPageAnswer(models.Model):
     correct_page_answer_ru = models.CharField(
         max_length=30, help_text="Enter a full correct answer for the page "
-        "(ru)")
+                                 "(ru)")
     correct_page_answer_en = models.CharField(
         max_length=30, help_text="Enter a full correct answer for the page "
-        "(en)")
+                                 "(en)")
     quest_page = models.ForeignKey(
-        QuestPage,
+        Scene,
         on_delete=models.CASCADE,
         help_text="Select a page for this answer",
         null=True,
